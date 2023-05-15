@@ -1,6 +1,12 @@
 # ブログ記事の自動生成・自動投稿
-GPTに生成させた記事をMicroCMSにログインして記事を投稿してくれる
+GPTに生成させた記事をMicroCMSにログインして記事を投稿してくれる(GPTとの連携は今後実装予定)
 
+# 動作
+### 正常時：
+
+### 異常時:
+スクリンショットがerrorディレクトリに格納され、メッセージがログに出力される仕様
+<img width="901" alt="image" src="https://github.com/shimizuyuta/blog_auto/assets/58338829/3e293825-d20d-43cb-8ca1-b1458f008b00">
 # 環境
 - MackBookPro 2022 M2 
 - macOS Ventura 13.2.1
@@ -26,5 +32,7 @@ docker-compose up -d
 docker-compose down --rmi all --volumes --remove-orphans
 ```
 
+
+
 # 備考
--　今回はdocker-seleniumのイメージを使用しましたが、DockerfileからChrome,Chromedriverを入れてやるやり方もあります。 [ChromeDriveの公式インストール](https://chromedriver.chromium.org/downloads)
+- 今回はdocker-seleniumのイメージを使用しましたが、DockerfileからChrome,Chromedriverを入れてやるやり方もあります。 [ChromeDriveの公式インストール](https://chromedriver.chromium.org/downloads)
