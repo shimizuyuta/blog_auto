@@ -1,3 +1,4 @@
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -48,12 +49,14 @@ def main():
         print('エラー：', e)
         if driver:
             print('エラーが発生したURL：', driver.current_url)
-            driver.save_screenshot('error.png')
+            timestamp = time.strftime("%Y%m%d-%H%M%S")
+            driver.save_screenshot(f'../error/error-{timestamp}.png')
     except Exception as e:
         print('未知のエラー：', e)
         if driver:
             print('エラーが発生したURL：', driver.current_url)
-            driver.save_screenshot('error.png')
+            timestamp = time.strftime("%Y%m%d-%H%M%S")
+            driver.save_screenshot(f'../error/error-{timestamp}.png')
     finally:
         if driver:
             driver.quit()
