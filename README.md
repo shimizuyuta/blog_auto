@@ -13,11 +13,11 @@ GPTに生成させた記事をMicroCMSにログインして記事を投稿して
 # 環境構築
 ### 1. Dockerイメージビルド
 ```bash
-docker build --no-cache --rm -t selenium-chrome .
+docker-compose build --no-cache
 ```
 ### 2. Dockerコンテナ起動
 ```bash
-docker run -it --rm selenium-chrome bash
+docker-compose up -d 
 ```
 ### 3. 必要なライブラリインストール
 - selenium
