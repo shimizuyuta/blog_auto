@@ -6,22 +6,25 @@ GPTに生成させた記事をMicroCMSにログインして記事を投稿して
 - macOS Ventura 13.2.1
 - Docker
 - Chrome Version 112.0.5615.137(Official Build)(arm64)
-
-# インストール
-- [ChromeDriveの公式インストール](https://chromedriver.chromium.org/downloads)（自分のchromeのバージョンと同じものをインストール）
   
 # 環境構築
-### 1. Dockerイメージビルド
+### 1. .envの設定
+```bash
+EMAIL=MicroCMSに登録しているメールアドレスを指定
+PASSWORD=MicroCMSに登録しているパスワードを指定
+```
+### 2. Dockerイメージビルド
 ```bash
 docker-compose build --no-cache
 ```
-### 2. Dockerコンテナ起動
+### 3. Dockerコンテナ起動
 ```bash
 docker-compose up -d 
 ```
-### 3. 必要なライブラリインストール
-- selenium
-
-
-
+### 4. Dockerコンテナ・イメージ削除
+```bash :削除コマンド
 docker-compose down --rmi all --volumes --remove-orphans
+```
+
+# 備考
+-　今回はdocker-seleniumのイメージを使用しましたが、DockerfileからChrome,Chromedriverを入れてやるやり方もあります。 [ChromeDriveの公式インストール](https://chromedriver.chromium.org/downloads)
