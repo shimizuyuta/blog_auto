@@ -14,4 +14,6 @@ services:
       - .:/app
     environment:
       SELENIUM_URL: http://selenium:4444/wd/hub
+    env_file:
+      - .env
     tty: true
