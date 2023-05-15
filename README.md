@@ -1,8 +1,15 @@
 # ブログ記事の自動生成・自動投稿
 GPTに生成させた記事をMicroCMSにログインして記事を投稿してくれる(GPTとの連携は今後実装予定)
 
-# 手順
+# デモ
+### 正常時：
+https://github.com/shimizuyuta/blog_auto/assets/58338829/83e7d018-cf78-4f4e-b2b6-59caf31974ba
 
+### 異常時:
+スクリンショットがerrorディレクトリに格納され、メッセージがログに出力される仕様
+<img width="901" alt="image" src="https://github.com/shimizuyuta/blog_auto/assets/58338829/3e293825-d20d-43cb-8ca1-b1458f008b00">
+
+# 手順
 1. アクセスURL： http://localhost:7900  
 ![image](https://github.com/shimizuyuta/blog_auto/assets/58338829/2268d2df-2e8a-46e5-940f-398681041b91)
 2. 接続をクリック
@@ -18,13 +25,7 @@ python src/main.py
 ```
 --- 
 
-# デモ
-### 正常時：
-![micro](https://github.com/shimizuyuta/blog_auto/assets/58338829/c87fdec8-cdb0-4bc8-ab19-da8a51d8357f)
 
-### 異常時:
-スクリンショットがerrorディレクトリに格納され、メッセージがログに出力される仕様
-<img width="901" alt="image" src="https://github.com/shimizuyuta/blog_auto/assets/58338829/3e293825-d20d-43cb-8ca1-b1458f008b00">
 # 環境
 - MackBookPro 2022 M2 
 - macOS Ventura 13.2.1
