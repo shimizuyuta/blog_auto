@@ -8,8 +8,6 @@ services:
     shm_size: "2gb"
   app:
     build: .
-    ports:
-      - 8888:8888
     volumes:
       - .:/app
     environment:
