@@ -20,6 +20,7 @@ python src/main.py
 
 # デモ
 ### 正常時：
+![micro](https://github.com/shimizuyuta/blog_auto/assets/58338829/c87fdec8-cdb0-4bc8-ab19-da8a51d8357f)
 
 ### 異常時:
 スクリンショットがerrorディレクトリに格納され、メッセージがログに出力される仕様
